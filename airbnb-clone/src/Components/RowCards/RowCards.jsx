@@ -2,7 +2,7 @@ import React from 'react'
 
 function RowCards(props) {
   return (
-    <div className='w-full pt-4 flex flex-wrap md:gap-6 lg:gap-7 px-6 md:px-[2.5rem] lg:px-[5.5rem]'>
+    <div className='w-full pt-4 flex flex-wrap md:gap-6 lg:gap-6 px-6 md:px-[2.5rem] lg:px-[5.5rem]'>
 
       <div className="w-full md:w-[24rem] lg:w-[22.5rem] rounded-xl overflow-hidden">
           <a href="#">

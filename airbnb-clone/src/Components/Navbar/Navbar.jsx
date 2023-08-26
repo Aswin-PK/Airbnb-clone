@@ -1,21 +1,24 @@
 import React from 'react'
 import Airbnb_Logo from '../../assets/images/Airbnb_Logo.png'
+import airbnb_logo from '../../assets/images/airbnb-logo.png'
 
 function Navbar() {
   return (
-    <nav class='navbar px-6 lg:px-[5.5rem] text-3xl h-[4.4rem] md:h-[5rem] lg:h-[5.5rem] bg-[#f4f4f4] border-b border-[#d1d1d1] sticky top-0 z-30 grid items-center'>
+    <nav class='navbar px-6 md:px-[2.5rem] lg:px-[5.5rem] text-3xl h-[4.4rem] md:h-[5rem] lg:h-[5.5rem] bg-[#f4f4f4] border-b border-[#d1d1d1] sticky top-0 z-30 grid items-center'>
       <div className="flex justify-center lg:justify-between items-center">
         
         <div className="logo-container w-full h-full hidden md:flex lg:flex">
-          <div className="h-full w-[8rem] pr-4">
-            <div className='h-full flex items-center'>
-              <img src={Airbnb_Logo} alt="" className='object-cover'/>
+          <div className="h-full md:w-[3rem] lg:w-[8rem] md:pr-0 lg:pr-4 ">
+            <div className='h-full lg:flex items-center p-0 md:py-2 md:pr-4'>
+              <img src={Airbnb_Logo} alt="" className='hidden lg:flex'/>
+              <img src={airbnb_logo} alt="" className='hidden md:flex lg:hidden'/>
             </div>
+
           </div>
         </div>
 
-        <div className="center-container bg-red-300 w-full h-[3rem] flex items-center justify-center">
-          <div className="item-container bg-yellow-600 flex items-center justify-center h-full w-[24.5rem] border rounded-full px-3">
+        <div className="center-container bg-red-300 w-full h-[3rem] flex items-center justify-center md:mr-[5.5rem]">
+          <div className="item-container bg-yellow-600 flex items-center justify-center h-full md:w-[22rem] lg:w-[24.5rem] border rounded-full px-3">
             <div className="inner-item-container h-full text-sm flex items-center justify-between">
               <span>
                 <button className="itembtn w-full">Anywhere</button>
