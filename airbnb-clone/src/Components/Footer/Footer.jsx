@@ -3,19 +3,19 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <div className='footer b-0 w-full h-[auto] z-40'>
+    <div className='footer b-0 w-full h-[auto] z-40 bg-[#f7f7f7] mt-[3rem]'>
         <div className="flex flex-col gap-2 px-6 md:px-[2.5rem] lg:px-[5.5rem] 2xl:px-[5rem] 2xl:py-[3rem] border-b-2 border-gray-200">
-            <span className='text-2xl font-medium'>Inspiration for future getaways</span>
-            <div className="h-[2.5rem] flex items-center mb-[1.5rem]">
-                <ul className="flex gap-[2rem]">
-                    <li>Popular</li>
-                    <li>Arts & Culture</li>
-                    <li>Outdoors</li>
-                    <li>Mountains</li>
-                    <li>Beach</li>
-                    <li>Unique stays</li>
-                    <li>Categories</li>
-                    <li>Things to do</li>
+            <span className='text-2xl font-medium mb-3'>Inspiration for future getaways</span>
+            <div className="h-[2.5rem] flex items-center mb-[1.5rem] border-b-2">
+                <ul className="h-full flex gap-[1.3rem]">
+                    <li className='cursor-pointer border-b-2 border-gray-700'>Popular</li>
+                    <li className='cursor-pointer '>Arts & Culture</li>
+                    <li className='cursor-pointer '>Outdoors</li>
+                    <li className='cursor-pointer '>Mountains</li>
+                    <li className='cursor-pointer '>Beach</li>
+                    <li className='cursor-pointer '>Unique stays</li>
+                    <li className='cursor-pointer '>Categories</li>
+                    <li className='cursor-pointer '>Things to do</li>
                 </ul>
             </div>
 
@@ -132,11 +132,11 @@ function Footer() {
                     <span className='h-full transition duration-100 hover:bg-[#ebebeb] grid items-center rounded-full'>
                         <svg width="1.4rem" height="1.4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-                            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                            <g id="SVGRepo_bgCarrier" strokeWidth="0" />
 
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                            <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
 
-                            <g id="SVGRepo_iconCarrier"> <g id="Navigation / Globe"> <path id="Vector" d="M3 12H8M3 12C3 16.9706 7.02944 21 12 21M3 12C3 7.02944 7.02944 3 12 3M8 12H16M8 12C8 16.9706 9.79086 21 12 21M8 12C8 7.02944 9.79086 3 12 3M16 12H21M16 12C16 7.02944 14.2091 3 12 3M16 12C16 16.9706 14.2091 21 12 21M21 12C21 7.02944 16.9706 3 12 3M21 12C21 16.9706 16.9706 21 12 21" stroke="#000000" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round" /> </g> </g>
+                            <g id="SVGRepo_iconCarrier"> <g id="Navigation / Globe"> <path id="Vector" d="M3 12H8M3 12C3 16.9706 7.02944 21 12 21M3 12C3 7.02944 7.02944 3 12 3M8 12H16M8 12C8 16.9706 9.79086 21 12 21M8 12C8 7.02944 9.79086 3 12 3M16 12H21M16 12C16 7.02944 14.2091 3 12 3M16 12C16 16.9706 14.2091 21 12 21M21 12C21 7.02944 16.9706 3 12 3M21 12C21 16.9706 16.9706 21 12 21" stroke="#000000" strokeWidth="1.44" strokeLinecap="round" strokeLinejoin="round" /> </g> </g>
 
                         </svg>
                     </span>
