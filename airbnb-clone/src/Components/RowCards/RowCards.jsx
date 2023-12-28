@@ -25,13 +25,15 @@ function RowCards() {
   
 
   return (
-    <div className='w-full pt-4 grid grid-cols-4 md:gap-6 lg:gap-6 px-6 md:px-[2.5rem] lg:px-[5.5rem] 2xl:px-[5rem]'>
+    <div className='w-full pt-4 flex flex-col lg:grid lg:grid-cols-4 gap-8 md:gap-6 lg:gap-6 px-6 md:px-[2.5rem] lg:px-[5.5rem] 2xl:px-[5rem]'>
       {
         details.map((data, index) => (
           loading ? <Skeleton key={index}/> : (
             <div key={index} className="w-full md:w-[20rem] lg:w-[20rem] rounded-t-xl overflow-hidden">
               <a href="#">
-                <div className=" w-full h-[20rem] lg:h-[20rem] slider rounded-xl overflow-hidden relative">
+                <div className=" w-full h-[19.5rem] lg:h-[19rem] slider rounded-xl overflow-hidden relative">
+                  
+                  {/* like button div */}
                   <div className="w-[1.4rem] h-[1.4rem] likebtn absolute right-4 top-4 z-10">
                     <span className="like text-xl">
                       <svg width="100%" height="100%" viewBox="0 -3.71 75.17 75.17" xmlns="http://www.w3.org/2000/svg">
@@ -40,8 +42,16 @@ function RowCards() {
                       </svg>
                     </span>
                   </div>
-                  <img className="w-full h-full object-cover absolute" src={data.imageUrl} alt="" />
+
+                  {/* Image slider */}
+                  <div className="image-slider absolute overflow-x-scroll no-scrollbar w-full h-full flex">
+                    <img className="w-full h-full object-cover " src={data.imageUrl} alt="" />
+                    <img className="w-full h-full object-cover " src={data.imageUrl} alt="" />
+                    <img className="w-full h-full object-cover " src={data.imageUrl} alt="" />
+                  </div>
                 </div>
+
+                {/* Description */}
                 <div className="pt-2 text-left">
                   <div className="flex justify-between">
                     <h5 className="text-md font-medium text-gray-900 dark:text-black">Karnataka, India</h5>
@@ -49,19 +59,29 @@ function RowCards() {
                   </div>
                   <p className="font-normal text-gray-700 dark:text-gray-500">199 kilometer's away</p>
                   <p className="font-normal text-gray-700 dark:text-gray-500">1-6 Sep</p>
-                  <p className="font-normal text-gray-900 dark:text-black mt-1"><span className='text-md font-medium'>7076</span> night</p>
+                  <p className="font-normal text-gray-900 dark:text-black mt-1">&#8377;<span className='text-md font-medium'>7076</span> night</p>
                 </div>
+
+                {/* previous and next button */}
+                {/* {
+                  <div className={`categories page bg-[#333] h-full w-[2rem] absolute left-0 flex items-center justify-start ${!isScrolled && "hidden"}`}>
+                    <span className='h-full flex items-center justify-center'>
+                      <i className="h-[1.7rem] w-[1.7rem] text-[0.7rem] fa-solid fa-chevron-left bg-white border-[0.05rem] border-[#a7a7a7] rounded-full grid place-content-center"></i>
+                    </span>
+                  </div>
+                } */}
+
               </a>
             </div>
           )
         ))
       }
-      <div className="w-full mt-10 col-span-4 text-center">
+      <div className="w-full mt-5 lg:mt-10 col-span-4 text-center">
         <div className='w-full flex items-center justify-center'>
           <span className='text-lg font-semibold'>Continue exploring OMG! homes</span>
         </div>
-        <div className='mt-4'>
-          <button className='w-[8rem] h-[3rem] bg-slate-900 text-slate-200 rounded-lg font-bold'>Show more</button>
+        <div className='mt-3'>
+          <button className='w-[8.2rem] lg:[8rem] h-[3rem] bg-slate-900 text-slate-200 rounded-lg font-bold'>Show more</button>
         </div>
       </div>
     </div>

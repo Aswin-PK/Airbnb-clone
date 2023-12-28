@@ -3,23 +3,23 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <div className='footer b-0 w-full h-[auto] z-40 bg-[#f7f7f7] mt-[3rem]'>
-        <div className="flex flex-col gap-2 px-6 md:px-[2.5rem] lg:px-[5.5rem] 2xl:px-[5rem] 2xl:py-[3rem] border-b-2 border-gray-200">
+    <div className='footer b-0 w-full h-[auto] z-40 bg-[#f7f7f7] mt-[2rem] lg:mt-[3rem]'>
+        <div className="flex flex-col gap-2 px-6 md:px-[2.5rem] lg:px-[5.5rem] 2xl:px-[5rem] py-[2.8rem] 2xl:py-[3rem] border-b-2 border-gray-200">
             <span className='text-2xl font-medium mb-3'>Inspiration for future getaways</span>
             <div className="h-[2.5rem] flex items-center mb-[1.5rem] border-b-2">
-                <ul className="h-full flex gap-[1.3rem]">
+                <ul className="h-full flex gap-[1.9rem] lg:gap-[1.3rem] overflow-x-scroll text-[0.85rem] lg:text-base whitespace-nowrap">
                     <li className='cursor-pointer border-b-2 border-gray-700'>Popular</li>
-                    <li className='cursor-pointer '>Arts & Culture</li>
-                    <li className='cursor-pointer '>Outdoors</li>
-                    <li className='cursor-pointer '>Mountains</li>
-                    <li className='cursor-pointer '>Beach</li>
-                    <li className='cursor-pointer '>Unique stays</li>
-                    <li className='cursor-pointer '>Categories</li>
-                    <li className='cursor-pointer '>Things to do</li>
+                    <li className='cursor-pointer'>Arts & Culture</li>
+                    <li className='cursor-pointer'>Outdoors</li>
+                    <li className='cursor-pointer'>Mountains</li>
+                    <li className='cursor-pointer'>Beach</li>
+                    <li className='cursor-pointer'>Unique stays</li>
+                    <li className='cursor-pointer'>Categories</li>
+                    <li className='cursor-pointer'>Things to do</li>
                 </ul>
             </div>
 
-            <div className="grid-items-list grid grid-cols-6 gap-4">
+            <div className="grid-items-list grid grid-cols-2 lg:grid-cols-6 gap-4">
                 <div className="flex flex-col">
                     <span>Canmore</span>
                     <span>Pet-friendly rentals</span>
@@ -92,10 +92,10 @@ function Footer() {
         </div>
 
 
-        <div className="grid grid-cols-3 gap-2 px-6 md:px-[2.5rem] lg:px-[5.5rem] 2xl:px-[5rem]">
-            <div className="2xl:py-[3rem] flex flex-col gap-2">
+        <div className="flex flex-col lg:grid lg:grid-cols-3 gap-0 lg:gap-2 px-6 md:px-[2.5rem] lg:px-[5.5rem] 2xl:px-[5rem]">
+            <div className="py-[1.4rem] 2xl:py-[3rem] flex flex-col gap-3 lg:gap-2 text-[0.85rem] lg:text-base">
                 <span className="font-semibold">Support</span>
-                <ul className="flex flex-col gap-2">
+                <ul className="flex flex-col gap-3 lg:gap-2">
                     <li>Help Centre</li>
                     <li>AirCover</li>
                     <li>Anti-discrimination</li>
@@ -104,9 +104,9 @@ function Footer() {
                     <li>Report neighbourhood concern</li>
                 </ul>
             </div>
-            <div className=" 2xl:py-[3rem] flex flex-col gap-2">
+            <div className="py-[1.4rem] 2xl:py-[3rem] flex flex-col gap-3 lg:gap-2 text-[0.85rem] lg:text-base">
                 <span className="font-semibold">Hosting</span>
-                <ul className="flex flex-col gap-2">
+                <ul className="flex flex-col gap-3 lg:gap-2">
                     <li>Airbnb your home</li>
                     <li>AirCover for Hosts</li>
                     <li>Hosting resources</li>
@@ -114,9 +114,9 @@ function Footer() {
                     <li>Hosting resonsibly</li>
                 </ul>
             </div>
-            <div className=" 2xl:py-[3rem] flex flex-col gap-2">
+            <div className="py-[1.4rem] 2xl:py-[3rem] flex flex-col gap-3 lg:gap-2 text-[0.85rem] lg:text-base">
                 <span className="font-semibold">Airbnb</span>
-                <ul className="flex flex-col gap-2">
+                <ul className="flex flex-col gap-3 lg:gap-2">
                     <li>Newsroom</li>
                     <li>New features</li>
                     <li>Careers</li>
@@ -126,7 +126,7 @@ function Footer() {
             </div>
         </div>
 
-        <div className="flex xl:flex-row-reverse xl:justify-between gap-4 mx-6 md:mx-[2.5rem] lg:mx-[5.5rem] 2xl:mx-[5rem] 2xl:py-[1.1rem] border-t-2 border-gray-200">
+        <div className="flex flex-col lg:flex-row-reverse xl:justify-between gap-4 mx-6 md:mx-[2.5rem] lg:mx-[5.5rem] 2xl:mx-[5rem] py-[1.1rem] border-t-2 border-gray-200">
             <div className="font-semibold flex items-center gap-4">
                 <span className='flex items-center gap-1'>
                     <span className='h-full transition duration-100 hover:bg-[#ebebeb] grid items-center rounded-full'>
@@ -149,7 +149,7 @@ function Footer() {
                     <li className='text-[1.3rem]'><i className='fa-brands fa-square-instagram'></i></li>
                 </ul>
             </div>
-            <div className="flex gap-2 items-center">
+            <div className="flex flex-col lg:flex-row gap-2 items-start lg:items-center">
                 <div className="">
                     <span>&copy; 2023 Airbnb, Inc.</span>
                 </div>
