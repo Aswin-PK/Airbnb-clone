@@ -4,7 +4,7 @@ import airbnb_logo from '../../assets/images/airbnb-logo.png'
 
 function Navbar() {
   return (
-    <nav className='navbar px-6 md:px-[2.5rem] lg:px-[5rem] text-3xl h-[4.4rem] md:h-[5rem] lg:h-[5.5rem] bg-white border-b border-[#d1d1d1] sticky top-0 z-30 grid items-center'>
+    <nav className='navbar px-6 md:px-[2.5rem] lg:px-[5rem] text-3xl h-[4.4rem] md:h-[5rem] lg:h-[5.1rem] bg-white border-b border-[#d1d1d1] sticky top-0 z-30 grid items-center'>
       <div className="flex justify-center lg:justify-between items-center">
         
       {/* Left side content  */}
